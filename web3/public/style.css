@@ -1,0 +1,603 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 1200px;
+}
+
+header {
+    height: 112px;
+    line-height: 112px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.secondary {
+    background-color: deepskyblue;
+    box-shadow: 0px 0px 17px 0px;
+    transition: all 0.5s ease-in;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+header nav {
+    float: right;
+}
+
+.logo img {
+    margin-top: 30px;
+}
+
+header nav ul li a {
+    padding-right: 30px;
+    font-weight: bold;
+    color: white;
+    transition: all 0.5s ease-in;
+}
+
+header nav ul li a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.img1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/singapore.jpg');
+    background-size: 100% 100%;
+}
+
+.img2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/mountains.jpg');
+    background-size: 100% 100%;
+}
+
+.img3 {
+    background-image: url('images/space.jpg');
+}
+
+.slider,
+.slider ul,
+.slider ul li {
+    height: 710px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.slider h2 {
+    font-weight: bold;
+    margin-top: 270px;
+}
+
+.slider span {
+    color: orange;
+}
+
+.slider a {
+    padding: 10px 40px;
+    margin-right: 10px;
+}
+
+.slider a.btn-half {
+    background-color: deepskyblue;
+    color: white;
+}
+
+.slider a.btn-half:hover {
+    opacity: 0.7;
+    transition: 0.5s ease-in;
+}
+
+.slider a.btn-full {
+    background-color: orange;
+    color: white;
+}
+
+.slider a.btn-full:hover {
+    opacity: 0.7;
+    transition: 0.5s ease-in;
+}
+
+.slider i {
+    font-size: 40px;
+    margin-right: 15px;
+}
+
+.intro-area {
+    position: relative;
+    padding: 100px 0px;
+    text-align: center;
+}
+
+.sub-heading {
+    position: relative;
+    margin-bottom: 75px;
+}
+
+.sub-heading:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -3%;
+    width: 6%;
+    height: 1px;
+    background-color: deepskyblue;
+    z-index: 1;
+    -webkit-transition: 0.4s ease;
+    -moz-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
+    transition: 0.4s ease;
+    -ms-transition: 0.4s ease;
+}
+
+.sub-heading:hover:before {
+    width: 24%;
+    margin-left: -12px;
+}
+
+.sub-heading:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -12%;
+    width: 24%;
+    height: 1px;
+    background-color: rgb(216, 228, 231);
+}
+
+.sub-heading p {
+    color: #818181;
+    display: inline-block;
+    padding: 0px 0px 20px;
+    position: relative;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+}
+
+.intro-block {
+    position: relative;
+    background: #f7f7f7;
+    margin: 50px 0px 0px;
+    text-align: center;
+    padding: 70px 25px 40px;
+}
+
+.intro-block:hover,
+.intro-block.active {
+    background: #0AABE1;
+}
+
+.intro-block:hover {
+    transition: 0.10s ease;
+    -webkit-transition: 0.10s ease;
+    -moz-transition: 0.10s ease;
+    -o-transition: 0.10s ease;
+    -ms-transition: 0.10s ease;
+}
+
+.intro-block .intro-icon {
+    position: absolute;
+    top: -31px;
+    left: 50%;
+    margin-left: -31px;
+}
+
+.intro-block .fa {
+    width: 63px;
+    height: 63px;
+    font-size: 30px;
+    color: white;
+    line-height: 2;
+    background-color: deepskyblue;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 10px #CCEEF9;
+}
+
+.intro-block:hover .fa,
+.intro-block.active .fa {
+    background-color: white;
+    color: deepskyblue;
+    box-shadow: 0px 0px 0px 10px deepskyblue;
+}
+
+.intro-block h3 {
+    font-size: 18px;
+    color: deepskyblue;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.intro-block p {
+    color: #505050;
+}
+
+.intro-block:hover h3,
+.intro-block:hover p {
+    color: #f6f6f6;
+}
+
+.feature-area {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/singapore.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.title h2,
+p {
+    color: white;
+}
+
+.single-feature h3 {
+    color: white;
+}
+
+.single-feature {
+    position: relative;
+    width: 325px;
+    float: left;
+    padding: 30px 0;
+    text-align: center;
+    border-right: 1px solid #65c8e5;
+    border-bottom: 1px solid #65c8e5;
+    transition: 0.10s ease;
+    -webkit-transition: 0.10s ease;
+    -moz-transition: 0.10s ease;
+    -o-transition: 0.10s ease;
+    -ms-transition: 0.10s ease;
+}
+
+.feature-block:after {
+    content: "";
+    display: table;
+}
+
+.feature-block:after {
+    clear: both;
+}
+
+.feature-block {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.single-feature i.fa {
+    border: 2px solid #fff;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 30px;
+    background-color: #00a7dd;
+    color: white;
+    width: 64px;
+    height: 64px;
+    -webkit-transition: .4s ease;
+    -moz-transition: .4s ease;
+    -o-transition: .4s ease;
+    transition: .4s ease;
+    -ms-transition: .4s ease;
+}
+
+.feature-block:hover .single-feature {
+    border-color: white;
+    -webkit-transition: .4s ease;
+    -moz-transition: .4s ease;
+    -o-transition: .4s ease;
+    transition: .4s ease;
+    -ms-transition: .4s ease;
+}
+
+.single-feature:hover .feature-icon .fa {
+    border: 2px solid #00a7dd;
+    background: white;
+    color: deepskyblue;
+}
+
+.single-feature:nth-of-type(even) {
+    border-right: none;
+}
+
+.single-feature:nth-last-child(2) {
+    border-bottom: none;
+}
+
+.single-feature:last-child {
+    border-bottom: none;
+}
+
+.feature-area {
+    padding: 100px 0;
+}
+
+.feature-mockup {
+    bottom: -227px;
+    position: relative;
+}
+
+.title .sub-heading p {
+    color: white;
+}
+
+.careers {
+    background-color: deepskyblue;
+}
+
+.testimonials {
+    background-image: url('images/singapore.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    color: white;
+}
+
+.testimonials .carousel-indicators {
+    bottom: -2px;
+}
+
+.testimonials .sub-heading p {
+    color: white;
+}
+
+.carousel-inner img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 2px solid deepskyblue;
+    padding: 5px;
+}
+
+#contacts {
+    margin: auto;
+    position: absolute;
+    padding: 50px;
+}
+
+.wrapper {
+    padding-top: 100px;
+    position: absolute;
+    height: 710px;
+    width: 100%;
+    color: black;
+    text-align: center;
+}
+
+.product1 {
+    width: 300px
+}
+
+.team-area {
+    padding: 100px 0px;
+}
+
+.team-area .sub-heading {
+    margin-bottom: 100px;
+}
+
+.team-man {
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: -50px;
+    overflow: hidden;
+    min-height: 100px;
+    height: 100px;
+    width: 100px;
+    min-width: 100px;
+    border: 10px solid deepskyblue;
+    border-radius: 50%;
+}
+
+.team-man img {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    border-radius: 50%;
+}
+
+.team-block h3 {
+    color: deepskyblue;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 70px;
+    margin-bottom: 5px;
+    right: 10px;
+}
+
+.team-block span {
+    color: #6c6c6c;
+    font-size: 16px;
+    text-transform: capitalize;
+    letter-spacing: 0.025em;
+}
+
+.team-block p {
+    color: dimgray;
+    font-size: 14px;
+    padding: 25px 15px;
+    line-height: 24px;
+}
+
+.team-description {
+    background-color: #f5f5f5
+}
+
+.team-social-network a {
+    margin: 0 6px;
+}
+
+.team-social-network i {
+    height: 40px;
+    width: 40px;
+    background: white;
+    text-align: center;
+    color: deepskyblue;
+    border-radius: 50%;
+    border: 3px solid #c4e5f0;
+    padding-top: 10px;
+}
+
+.team-block {
+    text-align: center;
+    position: relative;
+}
+
+.team-block:hover .team-description {
+    background-color: deepskyblue;
+    color: white;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -o-transition: .3s ease;
+    -ms-transition: .3s ease;
+}
+
+.team-block:hover .team-title h3,
+.team-block:hover .team-title span {
+    color: white;
+    transition: .3s ease;
+    -webkit-transition: .4s ease;
+    -moz-transition: .4s ease;
+    -o-transition: .4s ease;
+    -ms-transition: .4s ease;
+}
+
+.team-block:hover .team-description p {
+    color: #f9f9f9;
+    transition: .3s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -o-transition: .5s ease;
+    -ms-transition: .5s ease;
+}
+
+.team-block:hover .team-social-network i {
+    border-color: white;
+    background: deepskyblue;
+    color: white;
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -o-transition: .5s ease;
+    -ms-transition: .5s ease;
+}
+
+#download {
+    padding: 15px 0px;
+}
+
+.download h2 {
+    color: black;
+    margin-right: 0px;
+}
+
+.download .sub-heading p {
+    color: gray;
+}
+
+.download .default-btn {
+    background: transparent;
+    border: 1px solid deepskyblue;
+    font-size: 20px;
+    padding: 8px 40px;
+    margin: 0 12px;
+    transition: .5s ease-in;
+    -webkit-transition: .5s ease-in;
+    -moz-transition: .5s ease-in;
+    -o-transition: .5s ease-in;
+    -ms-transition: .5s ease-in;
+}
+
+.download .default-btn:hover {
+    background: white;
+    color: deepskyblue;
+}
+
+.contactse li {
+    display: list-item;
+    overflow: hidden;
+    margin-bottom: 25px;
+    padding-right: 25px;
+}
+
+.contactse li span {
+    display: list-item;
+}
+
+#contact {
+    padding: 100px 0px;
+}
+
+.contact-area h3 {
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+#h {
+    color: deepskyblue;
+    font-weight: 700;
+    margin-bottom: 4px;
+    letter-spacing: 0.025px;
+}
+
+#s {
+    display: block;
+    color: #3a3a3a;
+    font-size: 12px;
+    line-height: normal;
+    letter-spacing: 0.025em;
+}
+
+.contactse li .fa {
+    float: left;
+    color: deepskyblue;
+    font-size: 25px;
+}
+
+#careers ul li {
+    display: list-item;
+    background-color: deepskyblue;
+    padding-bottom: 5px;
+}
+
+#ev {
+    max-width: 1200px;
+    margin: auto;
+    overflow: auto;
+}
+
+#car {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 390px;
+}
+
+#car img {
+    width: 100%;
+    height: auto;
+}
+
+#sp {
+    padding: 100px 0px;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+}
